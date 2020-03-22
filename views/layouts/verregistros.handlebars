@@ -1,0 +1,29 @@
+{{#each registros}}
+
+<style>
+  form {
+    /* Apenas para centralizar o form na página */
+    margin: 50 auto;
+    width: 600px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+</style>
+
+
+  <form action="/Registro/{{dataValues.titulo}}">
+    <div>
+      <button type="submit">{{dataValues.titulo}}</button>
+    <br>
+    </div>
+    
+  </form>
+  
+
+{{/each}}
