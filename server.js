@@ -26,7 +26,8 @@ app.get('/home', (req, res) =>{
 app.get('/Registro/:titulo', (req, res) =>{
   Registro.findOne({titulo: req.params.titulo}).then((registros)=>{
     res.render('layouts/home',{registros: registros})
-  })
+  })//era para mostra o registro e não mostra
+  // colocando findAll monstra tudo, porem é pra mostrar so um
   
 })
 
